@@ -1,0 +1,27 @@
+{
+  "name": "talentic3",
+  "version": "1.0.0",
+  "description": "maquetacion base de home talentic para aprobación",
+  "main": "esc",
+  "scripts": {
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "talentic3"
+  },
+  "keywords": [
+    "sistema",
+    "de",
+    "informacion",
+    "documental",
+    "en",
+    "contenidos",
+    "digitales"
+  ],
+  "author": "instructores Talentic",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
+}

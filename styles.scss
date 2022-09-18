@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Colores*/
+.color1 {
+    background-color: rgb(88, 88, 88);
+}
+.color2 {
+    background-color: rgb(143, 142, 142);
+}
+.color3 {
+    background-color: red;
+}
+.color4 {
+    background-color: blueviolet;
+}
+.color5 {
+    background-color: green;
+}
+
+/*Fondos*/
+
+.pintura {
+    background-image: url(../images/Pintura.png);
+    background-size: 1300px;
+    background-repeat: repeat-x;
+}
+
+/*Cajas*/
+.caja1 {
+    padding-top: 10px;
+    padding-right: 0px;
+}
+.caja2 {
+    margin-top: 20px;
+}
+.caja3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.borde {
+    border-radius: 5px;
+    border: 2px black solid;
+}
+.borde2 {
+    border: 2px black solid;
+}
+
+/**/
+.alto1 {
+    height: 335px;
+}
+.alto2 {
+    height: 250px;
+}
+.alto3 {
+    height: 250px;
+}
+.alto4 {
+    height: 100px;
+}
+.alto5 {
+    height: 100px;
+}
+.imagen {
+    width: 200px;
+    padding: 10px;
+}
+
+/*Fondos*/
+.fondo1 {
+    background-color: rgb(190, 188, 188);
+    border: 2px black solid;
+}
+.fondo2 {
+    background-color: rgb(39, 39, 39);
+    border: 2px black solid;
+}
+
+h5 {
+    text-align: center;
+    padding: 5px;
+}
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    border: 1px #C4C4C4 solid;
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-left: 27px;
+}
+.boton:hover {
+    border: 1px #ED6C1D solid;
+    background-color: #FFA900;
+    color: rgb(28, 28, 28);
+}
+.boton1 {
+    
+}
+.boton1:hover {
+    border: 1px grey solid;
+    background-color: rgb(187, 186, 186);
+    color: rgb(28, 28, 28);
+}
+.espacio {
+    padding-top: 25px;
+}
+
+/*Medias*/
+
+@media screen and (max-width: 576px){
+    .imagen {
+        width: 150px;
+    }
+}
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
