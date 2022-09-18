@@ -101,19 +101,27 @@ h5 {
     font-size: 20px;
     border-radius: 20px;
     margin-left: 27px;
+    opacity: 1;
+    transition: 0.5s;
 }
+
 .boton:hover {
     border: 1px #ED6C1D solid;
     background-color: #FFA900;
     color: rgb(28, 28, 28);
 }
 .boton1 {
-    
+    border-radius: 5px;
 }
 .boton1:hover {
-    border: 1px grey solid;
-    background-color: rgb(187, 186, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA900;
     color: rgb(28, 28, 28);
+    border-radius: 5px;
+    padding: 0px;
+    height: 100%;
 }
 .espacio {
     padding-top: 25px;
@@ -121,9 +129,18 @@ h5 {
 
 /*Medias*/
 
-@media screen and (max-width: 576px){
-    .imagen {
-        width: 150px;
+@media only screen and (min-width: 260px) and (max-width: 768px){
+    .boton1 {
+        border-radius: 5px;
+        transition: .5s;
+    }
+    .boton1:hover {
+        display: block;
+        background-color: #FFA900;
+        color: rgb(28, 28, 28);
+        border-radius: 5px;
+        padding: 10px;
+        height: 80%;
     }
 }
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
