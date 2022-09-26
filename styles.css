@@ -11156,4 +11156,7 @@ textarea.form-control-lg {
   .btn-bespecialidad {
     height: auto !important
   }
+  .cajaCifras {
+    margin-bottom: 7rem !important;
+  }
 }
