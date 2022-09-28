@@ -3,6 +3,13 @@
   box-sizing: border-box;
 }
 
+.objAdelante{
+  z-index: 1;
+}
+.fuenteMulish{
+  font-family: 'Mulish', sans-serif !important;
+}
+
 /*Colores*/
 .color1 {
   background-color: rgb(88, 88, 88);
