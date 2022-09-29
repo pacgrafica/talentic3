@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Talentic demo</title>
+  <title>Talentic demo 2 masonry</title>
 
   <!--Libreria local
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -19,12 +19,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+
+  <!--Animate Style CDN-->
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!--Animate Style libreria Local
+  <link rel="stylesheet" href="css/animate.min.css">
+  -->
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" width="100rem"></a>
+      <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="" width="100rem"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,11 +59,14 @@
           </li>
         </ul>
         <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end flex-direction column">
-          <li class="nav-item">
+          <li class="nav-item anima">
+            <a class="nav-link" href="#"><img src="assets/mapasitio-icon.svg" alt="mapa del sitio" width="30rem"></a>
+          </li>
+          <li class="nav-item animaNotify">
             <a class="nav-link" href="#"><img src="assets/notificaciones.svg" alt="notificaciones" width="20rem"></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">Usuario&nbsp;<img src="assets/usuario.svg" alt="Usuario" width="20rem"></a>
+          <li class="nav-item anima">
+            <a class="nav-link" href="login.html">Usuario&nbsp;<img src="assets/buho.gif" alt="Usuario" width="40rem"></a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="#"><img src="assets/cenigraf.png" alt="Usuario" width="250rem"></a>
@@ -172,14 +182,14 @@
           <div class="card">
             <img src="assets/Cap.PNG" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Proyecto 001</h5>
+              <h5 class="card-title">Proyecto 001 LND Mitor y Leyendas</h5>
               <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
                 comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
               <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
                 comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
               <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
                 comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-              <a href="#" class="btn btn-warning">Explorar</a>
+              <a href="proyecto.html" class="btn btn-warning">Explorar</a>
             </div>
           </div>
         </div>
@@ -529,6 +539,12 @@
       });
     });
 
+  </script>
+
+  <!--Script para activar tooltips-->
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   </script>
 
   <style>
