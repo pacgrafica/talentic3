@@ -1,34 +1,7 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-}
-
-/*Colores*/
-.color1 {
-  background-color: rgb(88, 88, 88);
-}
-
-.color2 {
-  background-color: rgb(143, 142, 142);
-}
-
-.color3 {
-  background-color: red;
-}
-
-.color4 {
-  background-color: blueviolet;
-}
-
-.color5 {
-  background-color: green;
-}
-
-/*Fondos*/
-.pintura {
-  background-image: url(../images/Pintura.png);
-  background-size: 1300px;
-  background-repeat: repeat-x;
+  font-family: 'Questrial', sans-serif;
 }
 
 /*Cajas*/
@@ -133,8 +106,8 @@ h5, .h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFA900;
-  color: rgb(28, 28, 28);
+  background-color: #ed6c1d;
+  color: rgb(255, 255, 255) !important;
   border-radius: 5px;
   padding: 0px;
   height: 100%;
@@ -212,8 +185,8 @@ h5, .h5 {
   }
   .boton1:hover {
     display: block;
-    background-color: #FFA900;
-    color: rgb(28, 28, 28);
+    background-color: #ed6c1d;
+    color: rgb(254, 254, 254);
     border-radius: 5px;
     padding: 10px;
     height: 80%;
