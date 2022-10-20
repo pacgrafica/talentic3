@@ -94,78 +94,144 @@
     <br><br>
     <div class="container">
         <div class="row">
-            <div class="col-2 col-md-2">
+            <div class="col-1 col-md-1">
                 <div class="anima">
                     <a class="btn" href="index.html">
                         <img src="assets/home-icon.svg" alt="talentic" height="30rem">
                     </a>
                 </div>
             </div>
-            <main class="form-signin m-auto col-12 col-md-10 bg-light p-5 rounded-3">
+            <main class="m-auto col-12 col-md-12 bg-light p-5 rounded-3">
+                <div class="col-12 mb-5">
+                    <h1>Comienza a registrar los datos de tu proyecto</h1>
+                </div>
                 <form class="needs-validation" novalidate>
-                    <div class="form-row">
+                    <div class="row">
                       <div class="col-md-4 mb-3">
-                        <label for="validationCustom01">First name</label>
-                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                        <label for="validationCustom01">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="" value="" required>
                         <div class="valid-feedback">
-                          Looks good!
+                          bien!
                         </div>
                       </div>
                       <div class="col-md-4 mb-3">
-                        <label for="validationCustom02">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                        <label for="validationCustom02">Apellidos</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="" value="" required>
                         <div class="valid-feedback">
-                          Looks good!
+                          bien!
                         </div>
                       </div>
-                      <div class="col-md-12 mb-3">
-                        <label for="validationCustomUsername">Username</label>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustom07">Email</label>
+                        <input type="email" class="form-control" id="validationCustom07" placeholder="@misena.edu.co" value="" required>
+                        <div class="valid-feedback">
+                          bien!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 mb-3">
+                          <label for="validationCustom01">Integrantes</label>
+                          <input type="number" class="form-control" id="validationCustom01" placeholder="" value="" required>
+                          <div class="valid-feedback">
+                            bien!
                           </div>
-                          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                        </div>
+                        
+                        <!-- <div class="col-md-4 mb-3">
+                          <label for="validationCustomUsername">Nombre de proyecto</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                              por favor coloque un nombre de usuario.
+                            </div>
+                          </div>
+                        </div> -->
+
+                        <div class="col-md-4 mb-3">
+                          <label for="validationCustom08">Nombre del proyecto</label>
+                          <input type="text" class="form-control" id="validationCustom08" placeholder="" value="" required>
+                          <div class="valid-feedback">
+                            bien!
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                          <label for="tipo-proyecto">Tipo de proyecto</label>
+                          <input list="tipo-proyectos" name="proyecto" id="tipo-proyecto" class="form-control" placeholder="Seleccione" required>
+                              <datalist id="tipo-proyectos">
+                                  <option value="Contenidos Digitales">
+                                  <option value="Sistema de Software">
+                                  <option value="Sector Agricola">
+                                  <option value="Sector Público">
+                                  <option value="Artes Gráficas">
+                                  <option value="Metaverso">
+                                  <option value="Crypto">
+                                  <option value="Audiovisual">   
+                                  </datalist>
                           <div class="invalid-feedback">
-                            Please choose a username.
+                              Por favor coloque un programa de formación valido.
+                          </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <label for="start">Fecha entrega final</label>
+                            <input type="date" class="form-control" id="start" placeholder="" value="2018-07-22" min="2010-01-01" max="2023-12-31" required>
+                            <div class="valid-feedback">
+                              bien!
+                            </div>
+                          </div>
+                      </div>
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustom03">Centro de formación</label>
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="Centro para la Industria de la Comunicación Gráfica" required>
+                        <div class="invalid-feedback">
+                          Por favor coloque un centro de formación valido.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="programa">Programa de formación</label>
+                        <input list="programas" name="programa" id="programa" class="form-control" placeholder="Seleccione" required>
+                            <datalist id="programas">
+                                <option value="Animación 3D">
+                                <option value="Animación digital">
+                                <option value="Analisis y desarrollo de sistemas de información">
+                                <option value="Analisis y desarrollo de software">
+                                <option value="Desarrollo de medios gráficos visuales">
+                                <option value="Gestión de procesos de preprensa para medios impresos">
+                                <option value="Supervisión de procesos gráficos">
+                                <option value="Fotografía y procesos digitales">
+                                <option value="Producción de Multimedia">    
+                                </datalist>
+                        <div class="invalid-feedback">
+                            Por favor coloque un programa de formación valido.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Ficha</label>
+                        <input type="number" class="form-control" id="validationCustom05" placeholder="Numero" required>
+                        <div class="invalid-feedback">
+                          Coloque un numero de ficha valido.
+                        </div>
+                      </div>
+                      <div class="form-group col-md-2 mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Acepto los terminos y condiciones
+                          </label>
+                          <div class="invalid-feedback">
+                            Debes aceptar los terminos.
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="form-row">
-                      <div class="col-md-12 mb-3">
-                        <label for="validationCustom03">City</label>
-                        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid city.
-                        </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                        <label for="validationCustom04">State</label>
-                        <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid state.
-                        </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                        <label for="validationCustom05">Zip</label>
-                        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid zip.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                          Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                          You must agree before submitting.
-                        </div>
-                      </div>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    
+                    <button class="btn btn-primary text-light" type="submit">Enviar</button>
                   </form>
                   
                   <script>
