@@ -2,40 +2,17 @@
 /// 1. Patrones de Colores
 //////////////////////////////////////////
 $principal: #ED6C1D;
+$secundario: #c4c4c4;
 
 //////////////////////////////////////////
 /// 2. Modificando variables de Bootstrap
 //////////////////////////////////////////
 $primary: $principal;
+$secondary: $secundario;
 $enable-shadows: true;
 $enable-gradients: true;
 * {
     box-sizing: border-box;
-}
-
-/*Colores*/
-.color1 {
-    background-color: rgb(88, 88, 88);
-}
-.color2 {
-    background-color: rgb(143, 142, 142);
-}
-.color3 {
-    background-color: red;
-}
-.color4 {
-    background-color: blueviolet;
-}
-.color5 {
-    background-color: green;
-}
-
-/*Fondos*/
-
-.pintura {
-    background-image: url(../images/Pintura.png);
-    background-size: 1300px;
-    background-repeat: repeat-x;
 }
 
 /*Cajas*/
@@ -128,8 +105,8 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFA900;
-    color: rgb(28, 28, 28);
+    background-color: #ed6c1d;
+    color: rgb(254, 254, 254);
     border-radius: 5px;
     padding: 0px;
     height: 100%;
@@ -143,6 +120,60 @@ h5 {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
+/*Animaciones puras*/
+.anima {
+    transition: transform .2s;
+}
+
+.anima:hover {
+    transform: scale(1.20);
+}
+
+.animaNotify {
+
+}
+
+.animaNotify:hover {
+    animation: swing; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+/*estilos plantilla proyecto*/
+.masthead {
+    padding-top: calc(6rem + 74px);
+    padding-bottom: 6rem;
+  }
+  .masthead .masthead-heading {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+  .masthead .masthead-subheading {
+    font-size: 1.25rem;
+  }
+  .masthead .masthead-avatar {
+    width: 15rem;
+  }
+
+/*Fondo proyecto*/
+  .fondoProyecto{
+    background-image: url(assets/proyecto001/fondo.jpg);
+    background-position: center;
+    opacity: .9;
+  }
+  
+  @media (min-width: 992px) {
+    .masthead {
+      padding-top: calc(6rem + 104px);
+      padding-bottom: 6rem;
+    }
+    .masthead .masthead-heading {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+    .masthead .masthead-subheading {
+      font-size: 1.5rem;
+    }
+  }
 /*Medias*/
 
 @media only screen and (min-width: 260px) and (max-width: 768px){
@@ -152,8 +183,8 @@ h5 {
     }
     .boton1:hover {
         display: block;
-        background-color: #FFA900;
-        color: rgb(28, 28, 28);
+        background-color: #ed6c1d;
+        color: rgb(255, 255, 255);
         border-radius: 5px;
         padding: 10px;
         height: 80%;

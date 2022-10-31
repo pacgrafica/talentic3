@@ -1,41 +1,7 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-}
-
-.objAdelante{
-  z-index: 1;
-}
-.fuenteMulish{
-  font-family: 'Mulish', sans-serif !important;
-}
-
-/*Colores*/
-.color1 {
-  background-color: rgb(88, 88, 88);
-}
-
-.color2 {
-  background-color: rgb(143, 142, 142);
-}
-
-.color3 {
-  background-color: red;
-}
-
-.color4 {
-  background-color: blueviolet;
-}
-
-.color5 {
-  background-color: green;
-}
-
-/*Fondos*/
-.pintura {
-  background-image: url(../images/Pintura.png);
-  background-size: 1300px;
-  background-repeat: repeat-x;
+  font-family: 'Questrial', sans-serif;
 }
 
 /*Cajas*/
@@ -140,8 +106,8 @@ h5, .h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFA900;
-  color: rgb(28, 28, 28);
+  background-color: #ed6c1d;
+  color: rgb(255, 255, 255) !important;
   border-radius: 5px;
   padding: 0px;
   height: 100%;
@@ -151,6 +117,66 @@ h5, .h5 {
   padding-top: 25px;
 }
 
+/*Divididor*/
+.divididor {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/*Animaciones puras*/
+.anima {
+  transition: transform 0.2s;
+}
+
+.anima:hover {
+  transform: scale(1.2);
+}
+
+.animaNotify:hover {
+  -webkit-animation: swing;
+          animation: swing; /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+/*estilos plantilla proyecto*/
+.masthead {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+}
+
+.masthead .masthead-heading {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
+
+.masthead .masthead-subheading {
+  font-size: 1.25rem;
+}
+
+.masthead .masthead-avatar {
+  width: 15rem;
+}
+
+/*Fondo proyecto*/
+.fondoProyecto {
+  background-image: url(assets/proyecto001/fondo.jpg);
+  background-position: center;
+  opacity: 0.9;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+  }
+  .masthead .masthead-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+  .masthead .masthead-subheading {
+    font-size: 1.5rem;
+  }
+}
 /*Medias*/
 @media only screen and (min-width: 260px) and (max-width: 768px) {
   .boton1 {
@@ -159,8 +185,8 @@ h5, .h5 {
   }
   .boton1:hover {
     display: block;
-    background-color: #FFA900;
-    color: rgb(28, 28, 28);
+    background-color: #ed6c1d;
+    color: rgb(254, 254, 254);
     border-radius: 5px;
     padding: 10px;
     height: 80%;
@@ -11158,14 +11184,3 @@ textarea.form-control-lg {
     display: none !important;
   }
 }/*# sourceMappingURL=styles.css.map */
-
-@media screen and (min-width: 200px) and (max-width: 700px){
-  .btn-bespecialidad {
-    height: auto !important
-  }
-  .cajaCifras {
-    margin-bottom: 7rem !important;
-  }
-}
-
-/* animacion iconos */

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Talentic demo</title>
+
+    <!--Libreria local
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    -->
+
+    <!--Libreria CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Animate Style CDN-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--Animate Style libreria Local
+    <link rel="stylesheet" href="css/animate.min.css">
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="signin.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      body {
+        background-image: url(assets/fondo.jpg);
+        background-size: 100%;
+      }
+    </style>
+  </head>
+<body class="text-center">
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 col-md-1">
+                <div class="anima">
+                    <a class="btn" href="index.html">
+                        <img src="assets/home-icon.svg" alt="talentic" height="30rem">
+                    </a>
+                </div>
+            </div>
+            <main class="m-auto col-12 col-md-12 bg-light p-5 rounded-3">
+                <div class="col-12 mb-5">
+                    <h1>Comienza a registrar los datos de tu proyecto</h1>
+                </div>
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustom01">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="" value="" required>
+                        <div class="valid-feedback">
+                          bien!
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustom02">Apellidos</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="" value="" required>
+                        <div class="valid-feedback">
+                          bien!
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustom07">Email</label>
+                        <input type="email" class="form-control" id="validationCustom07" placeholder="@misena.edu.co" value="" required>
+                        <div class="valid-feedback">
+                          bien!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 mb-3">
+                          <label for="validationCustom01">Integrantes</label>
+                          <input type="number" class="form-control" id="validationCustom01" placeholder="" value="" required>
+                          <div class="valid-feedback">
+                            bien!
+                          </div>
+                        </div>
+                        
+                        <!-- <div class="col-md-4 mb-3">
+                          <label for="validationCustomUsername">Nombre de proyecto</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                              por favor coloque un nombre de usuario.
+                            </div>
+                          </div>
+                        </div> -->
+
+                        <div class="col-md-4 mb-3">
+                          <label for="validationCustom08">Nombre del proyecto</label>
+                          <input type="text" class="form-control" id="validationCustom08" placeholder="" value="" required>
+                          <div class="valid-feedback">
+                            bien!
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                          <label for="tipo-proyecto">Tipo de proyecto</label>
+                          <input list="tipo-proyectos" name="proyecto" id="tipo-proyecto" class="form-control" placeholder="Seleccione" required>
+                              <datalist id="tipo-proyectos">
+                                  <option value="Contenidos Digitales">
+                                  <option value="Sistema de Software">
+                                  <option value="Sector Agricola">
+                                  <option value="Sector Público">
+                                  <option value="Artes Gráficas">
+                                  <option value="Metaverso">
+                                  <option value="Crypto">
+                                  <option value="Audiovisual">   
+                                  </datalist>
+                          <div class="invalid-feedback">
+                              Por favor coloque un programa de formación valido.
+                          </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <label for="start">Fecha entrega final</label>
+                            <input type="date" class="form-control" id="start" placeholder="" value="2018-07-22" min="2010-01-01" max="2023-12-31" required>
+                            <div class="valid-feedback">
+                              bien!
+                            </div>
+                          </div>
+                      </div>
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustom03">Centro de formación</label>
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="Centro para la Industria de la Comunicación Gráfica" required>
+                        <div class="invalid-feedback">
+                          Por favor coloque un centro de formación valido.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="programa">Programa de formación</label>
+                        <input list="programas" name="programa" id="programa" class="form-control" placeholder="Seleccione" required>
+                            <datalist id="programas">
+                                <option value="Animación 3D">
+                                <option value="Animación digital">
+                                <option value="Analisis y desarrollo de sistemas de información">
+                                <option value="Analisis y desarrollo de software">
+                                <option value="Desarrollo de medios gráficos visuales">
+                                <option value="Gestión de procesos de preprensa para medios impresos">
+                                <option value="Supervisión de procesos gráficos">
+                                <option value="Fotografía y procesos digitales">
+                                <option value="Producción de Multimedia">    
+                                </datalist>
+                        <div class="invalid-feedback">
+                            Por favor coloque un programa de formación valido.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Ficha</label>
+                        <input type="number" class="form-control" id="validationCustom05" placeholder="Numero" required>
+                        <div class="invalid-feedback">
+                          Coloque un numero de ficha valido.
+                        </div>
+                      </div>
+                      <div class="form-group col-md-2 mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Acepto los terminos y condiciones
+                          </label>
+                          <div class="invalid-feedback">
+                            Debes aceptar los terminos.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <button class="btn btn-primary text-light" type="submit">Enviar</button>
+                  </form>
+                  
+                  <script>
+                  // Example starter JavaScript for disabling form submissions if there are invalid fields
+                  (function() {
+                    'use strict';
+                    window.addEventListener('load', function() {
+                      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                      var forms = document.getElementsByClassName('needs-validation');
+                      // Loop over them and prevent submission
+                      var validation = Array.prototype.filter.call(forms, function(form) {
+                        form.addEventListener('submit', function(event) {
+                          if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                          }
+                          form.classList.add('was-validated');
+                        }, false);
+                      });
+                    }, false);
+                  })();
+                  </script>
+            </main>
+            <div class="col-4 col-md-4"></div>
+        </div>
+    </div>
+    
+
+
+
+    
+  </body>
+</html>
+
+  
+  <!--Libreria Local bootstrap
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  -->
+
+
+
+  <!--script activación Libreria Wow-->
+  <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+  <!--Libreria CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -23,13 +23,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
 
-<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="signin.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -82,36 +84,51 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+      body {
+        background-image: url(assets/fondo.jpg);
+        background-size: 100%;
+      }
     </style>
-
+  </head>
+<body class="text-center">
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-4">
+                <div class="anima">
+                    <a class="btn" href="index.html">
+                        <img src="assets/home-icon.svg" alt="talentic" height="30rem">
+                    </a>
+                </div>
+            </div>
+            <main class="form-signin m-auto col-12 col-md-4 bg-light p-5 rounded-3">
+                <form>
+                  <img class="mb-4" src="assets/buho.gif" alt="" width="150px" >
+                  <h1 class="h3 mb-3 fw-normal">Inicia sesión</h1>
+              
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">email</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">contraseña</label>
+                  </div>
+              
+                  <div class="checkbox mb-3">
+                    <label>
+                      <input type="checkbox" value="remember-me"> Recuerdame
+                    </label>
+                  </div>
+                  <button class="w-100 btn btn-lg btn-primary text-light" type="submit">Ingresar</button>
+                  <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+                </form>
+            </main>
+            <div class="col-4 col-md-4"></div>
+        </div>
+    </div>
     
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
-  <body class="text-center">
-    
-<main class="form-signin w-100 m-auto">
-  <form>
-    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
-
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
-  </form>
-</main>
 
 
     
