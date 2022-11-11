@@ -1,454 +1,495 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Talentic demo</title>
 
-    <!--Libreria local
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talentic demo</title>
+
+  <!--Libreria local
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     -->
 
-    <!--Libreria CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Libreria CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!--Animate Style CDN-->
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!--Animate Style CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!--Animate Style libreria Local
+  <!--Animate Style libreria Local
     <link rel="stylesheet" href="css/animate.min.css">
     -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="" width="100rem"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active boton1" aria-current="page" href="#">Que es</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link boton1" href="#">En curso</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle boton1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Video
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Audiovisual</a></li>
-                <li><a class="dropdown-item" href="#">Contenidos digitales</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Producción de Multimedia</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end flex-direction column">
-            <li class="nav-item anima">
-              <a class="nav-link" href="#"><img src="assets/mapasitio-icon.svg" alt="mapa del sitio" width="30rem"></a>
-            </li>
-            <li class="nav-item animaNotify">
-              <a class="nav-link" href="#"><img src="assets/notificaciones.svg" alt="notificaciones" width="20rem"></a>
-            </li>
-            <li class="nav-item anima">
-              <a class="nav-link" href="login.html">Usuario&nbsp;<img src="assets/buho.gif" alt="Usuario" width="40rem"></a>
-            </li>
-            <!-- <li class="nav-item">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="" width="100rem"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active boton1" aria-current="page" href="#">Que es</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link boton1" href="#">En curso</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle boton1" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Video
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Audiovisual</a></li>
+              <li><a class="dropdown-item" href="#">Contenidos digitales</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Producción de Multimedia</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end flex-direction column">
+          <li class="nav-item anima">
+            <a class="nav-link" href="#"><img src="assets/mapasitio-icon.svg" alt="mapa del sitio" width="30rem"></a>
+          </li>
+          <li class="nav-item animaNotify">
+            <a class="nav-link" href="#"><img src="assets/notificaciones.svg" alt="notificaciones" width="20rem"></a>
+          </li>
+          <li class="nav-item anima">
+            <a class="nav-link" href="login.html">Usuario&nbsp;<img src="assets/buho.gif" alt="Usuario"
+                width="40rem"></a>
+          </li>
+          <!-- <li class="nav-item">
               <a class="nav-link" href="#"><img src="assets/cenigraf.png" alt="Usuario" width="250rem"></a>
           </li> -->
-            <li class="nav-item">
-              <a type="button" class="btn btn-primary" href="register.html" style="color: white;">Subir Proyecto</a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item">
+            <a type="button" class="btn btn-primary" href="register.html" style="color: white;">Subir Proyecto</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-5" id="navbarSupportedContent">
-          <form class="d-flex" role="search">
-            <input class="form-control" type="search" placeholder="Encontrar" aria-label="Search">
-            <button class="btn btn-outline-primary" type="submit"><img src="assets/buscar.svg" alt="buscar" width="20rem">
-            </button>
-          </form>
-        </div>
-        <div class="col-7 overflow-auto">
-          <div class="btn-group btn-group-sm d-flex align-items-center" role="group" aria-label="Basic example">
-            <a type="button" class="btn btn-secondary text-light d-flex align-items-center" style="height: 4rem;">Producción Multimedia</a>
-            <a type="button" class="btn btn-secondary text-light d-flex align-items-center" style="height: 4rem;">Animación 3D</a>
-            <a type="button" class="btn btn-secondary text-light d-flex align-items-center" style="height: 4rem;">Animación Digital</a>
-            <a type="button" class="btn btn-secondary text-light d-flex align-items-center" style="height: 4rem;">Fotografía</a>
-            <a type="button" class="btn btn-secondary text-light d-flex align-items-center" style="height: 4rem;">Analisis y Desarrollo de Software</a>
-            <a type="button" class="btn btn-secondary text-light d-flex align-items-center" style="height: 4rem;">Diseño Digital</a>
-            <a type="button" class="btn btn-secondary text-light d-flex align-items-center" style="height: 4rem;">Producción Audiovisual</a>
-            <a type="button" class="btn btn-secondary text-light d-flex align-items-center" style="height: 4rem;">Desarrollo de Medios Gráficos Visuales</a>
-            
-          </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-5" id="navbarSupportedContent">
+        <form class="d-flex" role="search">
+          <input class="form-control" type="search" placeholder="Encontrar" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit"><img src="assets/buscar.svg" alt="buscar" width="20rem">
+          </button>
+        </form>
+      </div>
+      <div class="col-7 overflow-auto">
+        <div class="btn-group btn-group-sm d-flex align-items-center" role="group" aria-label="Basic example">
+          <a type="button" class="btn btn-secondary text-light d-flex align-items-center"
+            style="height: 4rem;">Producción Multimedia</a>
+          <a type="button" class="btn btn-secondary text-light d-flex align-items-center"
+            style="height: 4rem;">Animación 3D</a>
+          <a type="button" class="btn btn-secondary text-light d-flex align-items-center"
+            style="height: 4rem;">Animación Digital</a>
+          <a type="button" class="btn btn-secondary text-light d-flex align-items-center"
+            style="height: 4rem;">Fotografía</a>
+          <a type="button" class="btn btn-secondary text-light d-flex align-items-center" style="height: 4rem;">Analisis
+            y Desarrollo de Software</a>
+          <a type="button" class="btn btn-secondary text-light d-flex align-items-center" style="height: 4rem;">Diseño
+            Digital</a>
+          <a type="button" class="btn btn-secondary text-light d-flex align-items-center"
+            style="height: 4rem;">Producción Audiovisual</a>
+          <a type="button" class="btn btn-secondary text-light d-flex align-items-center"
+            style="height: 4rem;">Desarrollo de Medios Gráficos Visuales</a>
+
         </div>
       </div>
     </div>
+  </div>
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/slide1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Equipo de Instructores</h5>
-              <p>Presentamos a los integrantes de nuestra formación profesional integral</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/slide2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Información de Interes para la comunidad SENA</h5>
-              <p>Conozca el procedimiento para registrarse correctamente</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/slide3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Aprendices Semillero Talentic</h5>
-              <p class="fuenteMulish">Presentamos al equipo de trabajo de Talentic año 2022.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-
-    <div class="container animate__animated animate__fadeInDown animate__delay-2s">
-        <h1 class="display-4 text-center">Conozca los proyectos que produce nuestro centro de formación</h1>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
-      
-      <!--Prueba como lucen los proyectos-->
-      <!--Hay que ajustar todo en una fila-->
-<div class="tab-content container-fluid caja2" id="myTabContent">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/slide1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Equipo de Instructores</h5>
+          <p>Presentamos a los integrantes de nuestra formación profesional integral</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/slide2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Información de Interes para la comunidad SENA</h5>
+          <p>Conozca el procedimiento para registrarse correctamente</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/slide3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Aprendices Semillero Talentic</h5>
+          <p class="fuenteMulish">Presentamos al equipo de trabajo de Talentic año 2022.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container animate__animated animate__fadeInDown animate__delay-2s">
+    <h1 class="display-4 text-center">Conozca los proyectos que produce nuestro centro de formación</h1>
+  </div>
+
+  <!--Prueba como lucen los proyectos-->
+  <!--Hay que ajustar todo en una fila-->
+  <div class="tab-content container-fluid caja2" id="myTabContent">
 
     <!-- Proyectos producción de Multimedia -->
-    <div class="tab-pane fade show active" id="produccionMultimedia-tab-pane" role="tabpanel" aria-labelledby="produccionMultimedia-tab" tabindex="0">
-  
+    <div class="tab-pane fade show active" id="produccionMultimedia-tab-pane" role="tabpanel"
+      aria-labelledby="produccionMultimedia-tab" tabindex="0">
+
       <!--Primera Fila-->
       <div class="row g-2 justify-content-center wow animate__animated animate__fadeInDown">
         <!--Primera Card-->
         <div class="col-12 col-sm-6 col-md-3 card">
-            <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 001 LND Mitos y Leyendas</h5>
-                <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-                <a href="proyecto.html" class="btn btn-warning">Explorar</a>
-            </div>
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001 LND Mitos y Leyendas</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="proyecto.html" class="btn btn-warning">Explorar</a>
+          </div>
         </div>
         <!--Segunda Card-->
         <div class="col-12 col-md-3 card">
-            <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 001</h5>
-                <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-                <a href="#" class="btn btn-warning">Explorar</a>
-            </div>
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="#" class="btn btn-warning">Explorar</a>
+          </div>
         </div>
         <!--Tercera Card-->
         <div class="col-12 col-md-3 card">
-            <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 001</h5>
-                <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-                <a href="#" class="btn btn-warning">Explorar</a>
-            </div>
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="#" class="btn btn-warning">Explorar</a>
+          </div>
         </div>
       </div>
-  
-  <!--Segunda Fila-->
+
+      <!--Segunda Fila-->
       <div class="row g-2 justify-content-center wow animate__animated animate__fadeInDown">
         <!--Primera Card-->
         <div class="col-12 col-md-3 card">
-            <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 001</h5>
-                <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-                <a href="#" class="btn btn-warning">Explorar</a>
-            </div>
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="#" class="btn btn-warning">Explorar</a>
+          </div>
         </div>
         <!--Segunda Card-->
         <div class="col-12 col-md-3 card">
-            <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 001</h5>
-                <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-                <a href="#" class="btn btn-warning">Explorar</a>
-            </div>
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="#" class="btn btn-warning">Explorar</a>
+          </div>
         </div>
         <!--Tercera Card-->
         <div class="col-12 col-md-3 card">
-            <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 001</h5>
-                <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-                <a href="#" class="btn btn-warning">Explorar</a>
-            </div>
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="#" class="btn btn-warning">Explorar</a>
+          </div>
         </div>
       </div>
-  
-  <!--Tercera Fila-->
-  <div class="row g-2 justify-content-center wow animate__animated animate__fadeInDown">
-    <!--Primera Card-->
-    <div class="col-12 col-md-3 card">
-        <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Proyecto 001</h5>
-            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-            <a href="#" class="btn btn-warning">Explorar</a>
-        </div>
-    </div>
-    <!--Segunda Card-->
-    <div class="col-12 col-md-3 card">
-        <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Proyecto 001</h5>
-            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-            <a href="#" class="btn btn-warning">Explorar</a>
-        </div>
-    </div>
-    <!--Tercera Card-->
-    <div class="col-12 col-md-3 card">
-        <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Proyecto 001</h5>
-            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-            <a href="#" class="btn btn-warning">Explorar</a>
-        </div>
-    </div>
-  </div>
-  
-  <!--Cuarta Fila-->
-  <div class="row g-2 justify-content-center wow animate__animated animate__fadeInDown">
-    <!--Primera Card-->
-    <div class="col-12 col-md-3 card">
-        <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Proyecto 001</h5>
-            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-            <a href="#" class="btn btn-warning">Explorar</a>
-        </div>
-    </div>
-    <!--Segunda Card-->
-    <div class="col-12 col-md-3 card">
-        <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Proyecto 001</h5>
-            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-            <a href="#" class="btn btn-warning">Explorar</a>
-        </div>
-    </div>
-    <!--Tercera Card-->
-    <div class="col-12 col-md-3 card">
-        <img src="assets/Cap.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Proyecto 001</h5>
-            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
-            <a href="#" class="btn btn-warning">Explorar</a>
-        </div>
-    </div>
-  </div>
-</div>
-  
-<!-- paginacion de proyectos   -->
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-12">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination pagination-lg justify-content-center">
-                  <li class="page-item"><a class="page-link" href="#">Atras</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">Adelante</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
 
-<!-- paginacion de proyectos   -->
-<div class="container-fluid wow animate__animated animate__fadeInDown">
-    <div class="row">
-        <div class="col-12 col-md-12">
-            <img src="assets/cifraTop.svg" alt="">
+      <!--Tercera Fila-->
+      <div class="row g-2 justify-content-center wow animate__animated animate__fadeInDown">
+        <!--Primera Card-->
+        <div class="col-12 col-md-3 card">
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="#" class="btn btn-warning">Explorar</a>
+          </div>
         </div>
+        <!--Segunda Card-->
+        <div class="col-12 col-md-3 card">
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="#" class="btn btn-warning">Explorar</a>
+          </div>
+        </div>
+        <!--Tercera Card-->
+        <div class="col-12 col-md-3 card">
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="#" class="btn btn-warning">Explorar</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Cuarta Fila-->
+      <div class="row g-2 justify-content-center wow animate__animated animate__fadeInDown">
+        <!--Primera Card-->
+        <div class="col-12 col-md-3 card">
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="#" class="btn btn-warning">Explorar</a>
+          </div>
+        </div>
+        <!--Segunda Card-->
+        <div class="col-12 col-md-3 card">
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="#" class="btn btn-warning">Explorar</a>
+          </div>
+        </div>
+        <!--Tercera Card-->
+        <div class="col-12 col-md-3 card">
+          <img src="assets/Cap.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 001</h5>
+            <p class="card-text">Este proyecto viene de la especialidad de producción de multimedia es un equipo muy
+              comprometido, han logrado llegar a la final de su entrega de proyectos...</p>
+            <a href="#" class="btn btn-warning">Explorar</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row p-5 mx-auto" style="background-color: #ff6c00; width: 95%; border-radius: 0px 0px 20px 20px;">
+
+    <!-- paginacion de proyectos   -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-lg justify-content-center">
+              <li class="page-item"><a class="page-link" href="#">Atras</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Adelante</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- paginacion de proyectos   -->
+    <div class="container-fluid wow animate__animated animate__fadeInDown">
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <img src="assets/cifraTop.svg" alt="">
+        </div>
+      </div>
+      <div class="row p-5 mx-auto" style="background-color: #ff6c00; width: 95%; border-radius: 0px 0px 20px 20px;">
         <div class="col-12 col-md-3 cajaCifras">
-            <div class="row">
-                <div class="col text-center" style="height: 5rem;">
-                    <img src="assets/proyecto-icon.png" style="width: 5em;">
-                </div>
+          <div class="row">
+            <div class="col text-center" style="height: 5rem;">
+              <img src="assets/proyecto-icon.png" style="width: 5em;">
             </div>
-            <div class="row">
-                <h1 class="display-4 text-center" style="font-size: 10rem;color:white; font-weight: 600">98</h1>
-            </div>
-            <div class="row">
-                <h2 style="color: white;" class="text-center">Proyectos Actuales</h2>
-            </div>
+          </div>
+          <div class="row">
+            <h1 class="display-4 text-center" style="font-size: 10rem;color:white; font-weight: 600">98</h1>
+          </div>
+          <div class="row">
+            <h2 style="color: white;" class="text-center">Proyectos Actuales</h2>
+          </div>
         </div>
         <div class="col-12 col-md-3 cajaCifras">
-            <div class="row">
-                <div class="col text-center" style="height: 5rem;">
-                    <img src="assets/proyecto-icon.png" style="width: 5em;">
-                </div>
+          <div class="row">
+            <div class="col text-center" style="height: 5rem;">
+              <img src="assets/proyecto-icon.png" style="width: 5em;">
             </div>
-            <div class="row"><h1 class="display-4 text-center" style="font-size: 10rem;color:white; font-weight: 600">22</h1></div>
-            <div class="row">
-                <h2 style="color: white;" class="text-center">Proyectos Consultados</h2>
-            </div>
+          </div>
+          <div class="row">
+            <h1 class="display-4 text-center" style="font-size: 10rem;color:white; font-weight: 600">22</h1>
+          </div>
+          <div class="row">
+            <h2 style="color: white;" class="text-center">Proyectos Consultados</h2>
+          </div>
         </div>
         <div class="col-12 col-md-3 cajaCifras">
-            <div class="row">
-                <div class="col text-center" style="height: 5rem;">
-                    <img src="assets/aprendices-icon.png" style="width: 5em;">
-                </div>
+          <div class="row">
+            <div class="col text-center" style="height: 5rem;">
+              <img src="assets/aprendices-icon.png" style="width: 5em;">
             </div>
-            <div class="row"><h1 class="display-4 text-center" style="font-size: 10rem;color:white; font-weight: 600">78</h1></div>
-            <div class="row">
-                <h2 style="color: white;" class="text-center">Aprendices Participantes</h2>
-            </div>
+          </div>
+          <div class="row">
+            <h1 class="display-4 text-center" style="font-size: 10rem;color:white; font-weight: 600">78</h1>
+          </div>
+          <div class="row">
+            <h2 style="color: white;" class="text-center">Aprendices Participantes</h2>
+          </div>
         </div>
         <div class="col-12 col-md-3 cajaCifras">
-            <div class="row">
-                <div class="col text-center" style="height: 5rem;">
-                    <img src="assets/empresarios-icon.png" style="width: 5em;">
-                </div>
+          <div class="row">
+            <div class="col text-center" style="height: 5rem;">
+              <img src="assets/empresarios-icon.png" style="width: 5em;">
             </div>
-            <div class="row"><h1 class="display-4 text-center" style="font-size: 10rem;color:white; font-weight: 600">22</h1></div>
-            <div class="row">
-                <h2 style="color: white;" class="text-center">Empresarios Participantes</h2>
-            </div>
+          </div>
+          <div class="row">
+            <h1 class="display-4 text-center" style="font-size: 10rem;color:white; font-weight: 600">22</h1>
+          </div>
+          <div class="row">
+            <h2 style="color: white;" class="text-center">Empresarios Participantes</h2>
+          </div>
         </div>
         <div class="row">
-            <div class="col-12 divididor">&nbsp;</div>
+          <div class="col-12 divididor">&nbsp;</div>
         </div>
-    </div>
-</div>
-
-<hr class="divididor">
-
-<div class="container wow animate__animated animate__fadeInDown">
-  <div class="row featurette">
-    <h1 class="display-4 text-center">Testimonios</h1>
-    <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading fw-normal lh-1">Juan Carlos Alfonso Silva en Colombia <span class="text-muted">Productor Multimedia en Talentic</span></h2>
-      <p class="lead">"Que buena empresa en donde al iniciar mi formación como Productor Multimedia me ha acogido y he podido desempeñar mis funciones como diseñador de interfaces y experiencias de usuario, muy contento de hacer parte de la familia Talentic"</p>
-    </div>
-    <div class="col-md-5 order-md-1">
-      <img src="assets/testimonio-juan-carlos.jpg" width="100%">
-  
-    </div>
-  </div>
-</div>
-
-  <hr class="divididor">
-
-<nav class="container-fluid" style="background-color: #ff6c00;">
-  <footer class="px-5 py-5">
-    <div class="row">
-      <div class="col-6 col-md-2 mb-3">
-        <h5 class="text-light">Plataforma</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Talentic</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Que es Talentic?</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Como funciona</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
-        </ul>
       </div>
+    </div>
 
-      <div class="col-6 col-md-2 mb-3">
-        <h5 class="text-light">Proyectos</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">En curso</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Proyectos</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Streamming</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Programas de Formación</a></li>
-        </ul>
+    <hr class="divididor">
+
+    <div class="container wow animate__animated animate__fadeInDown">
+      <div class="row featurette">
+        <h1 class="display-4 text-center">Testimonios</h1>
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Juan Carlos Alfonso Silva en Colombia <span
+              class="text-muted">Productor Multimedia en Talentic</span></h2>
+          <p class="lead">"Que buena empresa en donde al iniciar mi formación como Productor Multimedia me ha acogido y
+            he podido desempeñar mis funciones como diseñador de interfaces y experiencias de usuario, muy contento de
+            hacer parte de la familia Talentic"</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="assets/testimonio-juan-carlos.jpg" width="100%">
+
+        </div>
       </div>
+    </div>
 
-      <div class="col-6 col-md-2 mb-3">
-        <h5 class="text-light">Video</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Audiovisual</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Contenidos Digitales</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Filminuto</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Para la Industria</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Fichas Técnicas</a></li>
-        </ul>
-      </div>
+    <hr class="divididor">
 
-      <div class="col-md-5 offset-md-1 mb-3">
-        <form>
-          <h5 class="text-light">Suscribete a nuestros mensajes</h5>
-          <p class="text-light">Realizamos actualizaciones de contenidos mensualmente.</p>
-          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden">tu email</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="tu email">
-            <button class="btn btn-outline-light" type="button">Suscribete</button>
+    <nav class="container-fluid" style="background-color: #ff6c00;">
+      <footer class="px-5 py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5 class="text-light">Plataforma</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Talentic</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Que es Talentic?</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Como funciona</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+            </ul>
           </div>
-        </form>
-      </div>
-    </div>
 
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <p class="text-light">&copy; 2022 Equipo Talentic, Inc. Todos los derechos reservados.</p>
-      <ul class="list-unstyled d-flex">
-        <li class="ms-3"><a class="" href="#">
-          <img src="assets/twitter.svg" width="20rem">
-        </a></li>
-        <li class="ms-3"><a class="link-dark" href="#">
-          <img src="assets/instagram.svg" width="20rem"></a></li>
-        <li class="ms-3"><a class="link-dark" href="#">
-          <img src="assets/facebook.svg" width="20rem"></a></li>
-      </ul>
-    </div>
-  </footer>
-</nav>
-  
-  <!--Libreria Local bootstrap
+          <div class="col-6 col-md-2 mb-3">
+            <h5 class="text-light">Proyectos</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">En curso</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Proyectos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Streamming</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Programas de Formación</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5 class="text-light">Video</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Audiovisual</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Contenidos Digitales</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Filminuto</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Para la Industria</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Fichas Técnicas</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5 class="text-light">Suscribete a nuestros mensajes</h5>
+              <p class="text-light">Realizamos actualizaciones de contenidos mensualmente.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">tu email</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="tu email">
+                <button class="btn btn-outline-light" type="button">Suscribete</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p class="text-light">&copy; 2022 Equipo Talentic, Inc. Todos los derechos reservados.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="" href="#">
+                <img src="assets/twitter.svg" width="20rem">
+              </a></li>
+            <li class="ms-3"><a class="link-dark" href="#">
+                <img src="assets/instagram.svg" width="20rem"></a></li>
+            <li class="ms-3"><a class="link-dark" href="#">
+                <img src="assets/facebook.svg" width="20rem"></a></li>
+          </ul>
+        </div>
+      </footer>
+    </nav>
+
+    <!--Libreria Local bootstrap
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   -->
 
-
+  </div>
 
   <!--script activación Libreria Wow-->
   <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+  <script>
+    new WOW().init();
+  </script>
 
   <!--Libreria CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
