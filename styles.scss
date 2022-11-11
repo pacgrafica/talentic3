@@ -1,7 +1,7 @@
 //////////////////////////////////////////
 /// 1. Patrones de Colores
 //////////////////////////////////////////
-$principal: #ED6C1D;
+$principal: #39A900;
 $secundario: #c4c4c4;
 
 //////////////////////////////////////////
@@ -94,8 +94,8 @@ h5 {
 }
 
 .boton:hover {
-    border: 1px #ED6C1D solid;
-    background-color: #FFA900;
+    border: 1px #39A900 solid;
+    background-color: #54fa01;
     color: rgb(28, 28, 28);
 }
 .boton1 {
@@ -105,7 +105,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ed6c1d;
+    background-color: #39A900;
     color: rgb(254, 254, 254);
     border-radius: 5px;
     padding: 0px;
@@ -183,7 +183,7 @@ h5 {
     }
     .boton1:hover {
         display: block;
-        background-color: #ed6c1d;
+        background-color: #39A900;
         color: rgb(255, 255, 255);
         border-radius: 5px;
         padding: 10px;

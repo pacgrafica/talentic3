@@ -93,8 +93,8 @@ h5, .h5 {
 }
 
 .boton:hover {
-  border: 1px #ED6C1D solid;
-  background-color: #FFA900;
+  border: 1px #39A900 solid;
+  background-color: #54fa01;
   color: rgb(28, 28, 28);
 }
 
@@ -106,7 +106,7 @@ h5, .h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ed6c1d;
+  background-color: #39A900;
   color: rgb(255, 255, 255) !important;
   border-radius: 5px;
   padding: 0px;
@@ -185,7 +185,7 @@ h5, .h5 {
   }
   .boton1:hover {
     display: block;
-    background-color: #ed6c1d;
+    background-color: #39A900;
     color: rgb(254, 254, 254);
     border-radius: 5px;
     padding: 10px;
@@ -261,8 +261,8 @@ h5, .h5 {
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #ED6C1D;
-  --bs-link-hover-color: #be5617;
+  --bs-link-color: #39A900;
+  --bs-link-hover-color: #205f00;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
